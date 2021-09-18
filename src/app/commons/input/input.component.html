@@ -1,0 +1,55 @@
+
+<button pButton pRipple type="button" label="Primary"></button>
+<br/>
+<br/>
+<button pButton pRipple type="button" label="Secondary" class="p-button-secondary"></button>
+<br/>
+
+<div class="p-field">
+    <label for="username1">Username</label>
+    <input id="username1" type="username" aria-describedby="username1-help" pInputText />
+    <small id="username1-help">Enter your username to reset your password.</small>
+</div>
+
+<br/>
+<br/>
+<p-splitButton label="Save" icon="pi pi-plus" [model]="items" class="p-split-button-outlined"></p-splitButton>
+<br/>
+<br/>
+<p-tabView>
+    <p-tabPanel>
+        <ng-template pTemplate="header">
+        <div style="display: flex;flex-direction: column !important;">
+            <h1 style="margin: 2px 0px;">826</h1>
+            <h3 style="margin: 2px 0px;">Tout</h3>
+        </div>
+        </ng-template>
+        Tout
+    </p-tabPanel>
+    <p-tabPanel header="A démarrer">
+        A démarrer
+    </p-tabPanel>
+    <p-tabPanel header="En cours">
+        En cours
+    </p-tabPanel>
+    <p-tabPanel header="Complété">
+        Complété
+    </p-tabPanel>
+    <p-tabPanel header="Refusé">
+        Refusé
+    </p-tabPanel>
+    <p-tabPanel header="Expiré">
+        Expiré
+    </p-tabPanel>
+
+</p-tabView>
+
+<div class="form-group">
+    <div class="input-group">
+        <div class="input-group-icon"></div>
+        <input type="text" class="form-control" placeholder="Nom-utilisateur">
+    </div>
+    <div class="text-danger">
+
+    </div>
+</div>
